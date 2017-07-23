@@ -1,17 +1,21 @@
 <template>
-    <ul class="nav nav-pills">
-        <router-link to="/" tag="li" active-class="active" exact><a>Home</a></router-link>
-        <router-link to="/user" tag="li" active-class="active"><a>User</a></router-link>
-    </ul>
+    <div id="header">
+        <ul class="nav nav-pills">
+            <router-link to="/" tag="li" active-class="active" exact><a>{{ home }}</a></router-link>
+            <router-link to="/posts" tag="li" active-class="active"><a>{{ posts }}</a></router-link>
+        </ul>
+    </div>
 </template>
 
 <script>
 	export default {
-		name:    '',
+		name:    'header',
 		data() {
-			return {}
-		},
-		methods: {}
+			return {
+				home: 'Home',
+                posts: 'Posts'
+            }
+		}
 	}
 </script>
 
