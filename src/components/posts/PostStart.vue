@@ -1,6 +1,5 @@
 <template>
     <div id="postStart">
-        <p>Please select a Post</p>
         <hr>
         <ul class="list-group" v-for="post in posts">
             <li class="list-group-item">
@@ -15,9 +14,7 @@
                 <strong><em>category: </em></strong> {{ post.category }}
             </li>
             <li class="list-group-item">
-                <strong><em>image: </em></strong> {{ post.image }}
-                <hr>
-                <hr>
+                <img width="400" height="550" v-bind:src="post.image"/>
             </li>
         </ul>
     </div>
@@ -37,5 +34,12 @@
 <style>
     li {
         cursor: pointer;
+    }
+    .list-group {
+        border: 1px solid cornflowerblue;
+        margin-top: 0px;
+    }
+    .list-group-item {
+        border: 1px solid #333;
     }
 </style>

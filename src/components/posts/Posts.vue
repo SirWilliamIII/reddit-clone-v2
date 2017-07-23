@@ -1,19 +1,17 @@
 <template>
     <div id="postsPage">
+        <PostNavigation/>
         <PostStart/>
-        <PostDetails/>
     </div>
 </template>
 
 <script>
     import PostStart from './PostStart.vue'
-    import PostDetails from './PostDetails.vue'
-
-
+    import PostNavigation from './PostNavigation.vue'
     export default {
     	components: {
             PostStart,
-    		PostDetails
+            PostNavigation
         }
     }
 </script>

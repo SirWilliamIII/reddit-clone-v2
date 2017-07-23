@@ -1,8 +1,8 @@
 export default [{
 	author:  'SciencyBoi42',
-	title:   'No snapchat, that\'s not what I wanted...',
+	title:   'Still the most interesting man...',
 	category:   'rising',
-	image: 'http://imgur.com/frNJGqz'
+	image: 'https://s-media-cache-ak0.pinimg.com/736x/73/ef/dd/73efddcda882bf048c9677f9abe1e8b8.jpg'
 }, {
 	author:  'thotsNprayers666',
 	title: 'Will Ferell bahahahaha',
