@@ -1,6 +1,5 @@
 <template>
-    <div id="postStart">
-        <hr>
+    <div id="postContent">
         <ul class="list-group" v-for="post in posts">
             <li class="list-group-item">
                 <h3>Author: </h3>
@@ -22,8 +21,9 @@
 </template>
 
 <script>
-	import posts from './lib/posts'
+    import posts from './lib/posts'
 	export default {
+    	name: 'postContent',
 		data() {
 			return {
 				posts

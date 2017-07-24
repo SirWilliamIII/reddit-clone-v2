@@ -1,7 +1,7 @@
 <template>
     <div id="header">
         <ul class="nav nav-pills" id="routeBtns">
-            <a class="navbar-brand navbar-left" href="#" id="logo"> <img height="60" width="60" src="../assets/logo.png"
+            <a class="navbar-brand navbar-left" href="https://www.reddit.com/" id="logo"> <img height="60" width="60" src="../assets/logo.png"
                 alt=""> </a>
             <router-link to="/" tag="li" active-class="active" exact><a>{{ home }}</a></router-link>
             <router-link to="/posts" tag="li" active-class="active"><a>{{ posts }}</a></router-link>

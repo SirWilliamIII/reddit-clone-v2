@@ -1,16 +1,16 @@
 <template>
     <div id="postsPage">
         <PostNavigation/>
-        <PostList/>
+        <PostContent/>
     </div>
 </template>
 
 <script>
-    import PostList from './posts/PostList.vue'
+    import PostContent from './posts/PostContent.vue'
     import PostNavigation from './posts/PostNavigation.vue'
     export default {
     	components: {
-            PostList,
+            PostContent,
             PostNavigation
         }
     }
