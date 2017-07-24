@@ -16,6 +16,7 @@
             <li class="list-group-item">
                 <img width="400" height="550" v-bind:src="post.image"/>
             </li>
+            <hr>
         </ul>
     </div>
 </template>
@@ -40,6 +41,6 @@
         margin-top: 0px;
     }
     .list-group-item {
-        border: 1px solid #333;
+
     }
 </style>
