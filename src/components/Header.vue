@@ -3,6 +3,7 @@
         <ul class="nav nav-pills" id="routeBtns">
             <router-link to="/" tag="li" active-class="active" exact><a>{{ home }}</a></router-link>
             <router-link to="/posts" tag="li" active-class="active"><a>{{ posts }}</a></router-link>
+            <router-link to="/createpost" tag="li" active-class="active"><a>{{ createpost }}</a></router-link>
         </ul>
     </div>
 </template>
@@ -13,7 +14,8 @@
 		data() {
 			return {
 				home: 'Home',
-                posts: 'Posts'
+                posts: 'Posts',
+                createpost: 'Create Post'
             }
 		}
 	}
@@ -21,8 +23,6 @@
 
 <style>
     #routeBtns {
-        margin-top: 10px;
-        margin-bottom: 50px;
-        margin-left: 0px
+        margin: 10px 0px 50px 0px;
     }
 </style>

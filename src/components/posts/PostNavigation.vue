@@ -1,13 +1,14 @@
 <template>
     <div id="postNavigation">
         <div class="dropdown">
-            <button id="sortBtn" class="btn btn-primary dropdown-toggle pull-right" type="button" data-toggle="dropdown">
+            <button id="sortBtn" class="btn btn-outline-warning dropdown-toggle pull-right" type="button"
+                data-toggle="dropdown">
                 Sort By <span class="caret"/>
             </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Author</a></li>
-                <li><a href="#">Title</a></li>
-                <li><a href="#">Category</a></li>
+            <ul class="dropdown-menu pull-right">
+                <li @click="sortAuthors"><a>Author</a></li>
+                <li><a>Title</a></li>
+                <li><a>Category</a></li>
             </ul>
         </div>
 
@@ -20,7 +21,11 @@
 		data() {
 			return {}
 		},
-		methods: {}
+		methods: {
+			sortAuthors() {
+
+            }
+        }
 	}
 </script>
 
