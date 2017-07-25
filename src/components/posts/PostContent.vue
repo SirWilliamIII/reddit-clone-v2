@@ -21,9 +21,9 @@
 </template>
 
 <script>
-    import posts from './lib/posts'
+	import posts from './lib/posts'
 	export default {
-    	name: 'postContent',
+		name: 'postContent',
 		data() {
 			return {
 				posts
@@ -36,10 +36,12 @@
     li {
         cursor: pointer;
     }
+
     .list-group {
-        border: 1px solid cornflowerblue;
+        border:     1px solid cornflowerblue;
         margin-top: 0px;
     }
+
     .list-group-item {
 
     }

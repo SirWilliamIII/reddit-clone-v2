@@ -2,21 +2,22 @@
     <div>
         <form class="form">
             <div class="form-group">
-                <label for="author">Author</label> <input v-model="post.author" class="form-control" id="author"
-                placeholder="Author name">
+                <label for="username">Username</label> <input v-model="post.username" class="form-control" id="username"
+                placeholder="username">
             </div>
             <div class="form-group">
                 <label for="title">Title</label> <input v-model="post.title" class="form-control" id="title"
                 placeholder="Title">
             </div>
             <div class="form-group">
-                <label for="category">Category</label> <input v-model="post.category" class="form-control" id="category"
-                placeholder="Category">
+                <label for="body">Body</label> <input v-model="post.body" class="form-control" id="body"
+                placeholder="body">
             </div>
             <div class="form-group">
-                <label for="image">Image</label> <input v-model="post.image" class="form-control" id="image"
-                placeholder="Image Url">
+                <label for="image_url">Image URL</label> <input v-model="post.image_url" class="form-control" id="image_url"
+                placeholder="image_url">
             </div>
+
             <button @click="addPost" type="button" class="btn btn-success">
                 Add Post
             </button>
