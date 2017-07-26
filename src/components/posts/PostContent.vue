@@ -1,19 +1,26 @@
+<!--suppress ALL -->
+
 <template>
     <div id="postContent">
         <ul class="list-group" v-for="post in posts">
             <li class="list-group-item">
                 <h3>Author: </h3>
-                {{ post.author }}
+                {{ post.username }}
             </li>
             <li class="list-group-item">
                 <h3>Title: </h3>
                 {{ post.title }}
             </li>
             <li class="list-group-item">
-                <strong><em>category: </em></strong> {{ post.category }}
+                <h3>Body: </h3>
+                {{ post.body }}
+            </li>
+
+            <li class="list-group-item">
+                <strong><em>Comments: </em></strong>There are {{ showCounter(counter) }} comments
             </li>
             <li class="list-group-item">
-                <img width="400" height="550" v-bind:src="post.image"/>
+                <img width="400" height="550" v-bind:src="post.image_url"/>
             </li>
             <hr>
         </ul>
@@ -23,10 +30,16 @@
 <script>
 	import posts from './lib/posts'
 	export default {
-		name: 'postContent',
+		name:    'postContent',
 		data() {
 			return {
-				posts
+				posts,
+				counter: 0
+			}
+		},
+		methods: {
+			showCounter(counter) {
+				return counter !== 0 ? counter : 0
 			}
 		}
 	}

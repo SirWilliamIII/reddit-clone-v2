@@ -10,11 +10,12 @@
                 placeholder="Title">
             </div>
             <div class="form-group">
-                <label for="body">Body</label> <input v-model="post.body" class="form-control" id="body"
-                placeholder="body">
+                <label for="body">Body</label> <textarea v-model="post.body" class="form-control" id="body"
+                placeholder="body"></textarea>
             </div>
             <div class="form-group">
-                <label for="image_url">Image URL</label> <input v-model="post.image_url" class="form-control" id="image_url"
+                <label for="image_url">Image URL</label> <input v-model="post.image_url" class="form-control"
+                id="image_url"
                 placeholder="image_url">
             </div>
 
@@ -34,25 +35,25 @@
 			return {
 				posts,
 				post: {
-					author:   '',
+					username:   '',
 					title:    '',
-					category: '',
-					image:    ''
+					body: '',
+					image_url:    ''
 				}
 			}
 		},
 		methods: {
 			addPost() {
 				this.posts.push({
-					author:   this.post.author,
+					username:   this.post.username,
 					title:    this.post.title,
-					category: this.post.category,
-					image:    this.post.image
+					body: this.post.body,
+					image_url:    this.post.image_url
 				});
-				this.post.author = ''
+				this.post.username = ''
 				this.post.title = ''
-				this.post.category = ''
-				this.post.image = ''
+				this.post.body = ''
+				this.post.image_url = ''
 			}
 		}
 	}
