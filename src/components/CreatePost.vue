@@ -22,6 +22,9 @@
             <button @click="addPost" type="button" class="btn btn-success">
                 Add Post
             </button>
+            <button @click="submit" class="btn btn-info">
+                http
+            </button>
         </form>
     </div>
 </template>
@@ -55,15 +58,7 @@
 				this.post.title = ''
 				this.post.body = ''
 				this.post.image_url = ''
-			},
-            submit() {
-				this.$http.post('https://vue-http-f2d29.firebaseio.com/data.json', this.posts)
-                    .then(response => {
-                        console.log(response)
-                    }, error => {
-                    	console.log('Not working', error)
-                    })
-            }
+			}
 		}
 	}
 </script>

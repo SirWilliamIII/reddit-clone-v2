@@ -14,25 +14,27 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-inverse navbar-fixed-bottom">
-            <div class="container">
-                <div id="footer">
-                    <p class="text-muted credit">&copy Copyright <span><a
-                        href="https://www.willcarpenter.site">Will Carpenter</a>
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </nav>
+        <Footer/>
     </div>
 </template>
 
 <script>
 	import Paneling from './components/Paneling.vue'
 	import Header from './components/Header.vue'
+    import Footer from './components/Footer.vue'
 	export default {
 		components: {
-			Header, Paneling
+			Header, Paneling, Footer
+		},
+		methods:    {
+			submit() {
+				this.$http.post('https://vue-http-f2d29.firebaseio.com/data.json', this.posts)
+					.then(response => {
+						console.log(response)
+					}, error => {
+						console.log('Not working', error)
+					})
+			}
 		}
 	}
 </script>
@@ -41,9 +43,11 @@
     #main-content {
         margin-top: 30px;
     }
+
     .content {
         margin-top: 50px;
     }
+
     .jumbotron {
         background: rgba(0, 56, 122, 0.2);
     }

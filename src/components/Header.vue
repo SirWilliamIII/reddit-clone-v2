@@ -6,6 +6,7 @@
             <router-link to="/" tag="li" active-class="active" exact><a>{{ home }}</a></router-link>
             <router-link to="/posts" tag="li" active-class="active"><a>{{ posts }}</a></router-link>
             <router-link to="/createpost" tag="li" active-class="active"><a>{{ createpost }}</a></router-link>
+            <router-link to="/dont/look/for/me/" tag="li" active-class="active"><a>{{ more }}</a></router-link>
         </ul>
     </div>
 </template>

@@ -8,7 +8,7 @@ Vue.use(VueResource)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-	routes: routes
+	routes
 })
 
 new Vue({
