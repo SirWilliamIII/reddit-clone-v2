@@ -44,6 +44,7 @@
 		},
 		methods: {
 			addPost() {
+				console.log(this.post.username)
 				this.posts.push({
 					username:   this.post.username,
 					title:    this.post.title,

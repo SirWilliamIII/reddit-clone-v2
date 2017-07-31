@@ -12,12 +12,6 @@
 
 <script>
 	export default {
-		name:    '',
-		data() {
-			return {
-				counter: 0
-            }
-		},
 		methods: {
 			addOne (a) {
                 a++
