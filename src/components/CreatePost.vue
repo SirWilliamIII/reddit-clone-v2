@@ -55,7 +55,15 @@
 				this.post.title = ''
 				this.post.body = ''
 				this.post.image_url = ''
-			}
+			},
+            submit() {
+				this.$http.post('https://vue-http-f2d29.firebaseio.com/data.json', this.posts)
+                    .then(response => {
+                        console.log(response)
+                    }, error => {
+                    	console.log('Not working', error)
+                    })
+            }
 		}
 	}
 </script>
